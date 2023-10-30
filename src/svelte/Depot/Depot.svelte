@@ -1014,63 +1014,68 @@ limitations under the License.
 {/if}
 
 <style>
-  .buttonIcon {
-    background-color: #3a3a3a;
-    border: none;
-    color: white;
-    display: inline-block;
-    cursor: pointer;
-  }
+    .sheets {
+        background-color: var(--vscode-sideBar-background);
+    }
 
-  .buttonIcon:hover {
-    background-color: #2a2d2e;
-  }
+    .buttonIcon {
+        background-color: var(--vscode-button-background);
+        border: none;
+        color: var(--vscode-button-foreground);
+        display: inline-block;
+        cursor: pointer;
+    }
 
-  .buttonIcon:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  .buttonIcon:active:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  .buttonIcon.padded {
-    margin: 5px 5px 5px 0px;
-    width: 45px;
-    height: 45px;
-  }
-  .buttonIcon:disabled {
-    opacity: 40%;
-  }
-  .buttonIcon:disabled:hover {
-    background-color: #3a3a3a;
-  }
+    .buttonIcon:hover {
+        background-color: var(--vscode-button-hoverBackground);
+    }
 
-  .sheetButton {
-    background-color: #3a3a3a;
-    border: none;
-    color: white;
-    display: inline-block;
-    cursor: pointer;
-    margin: 0px 5px 0px 0px;
-    padding: 8px 8px 8px 8px;
-  }
-  .sheetButton:hover {
-    background-color: #252526;
-  }
-  .sheetButton.selected {
-    background-color: #252526;
-  }
-  .sheetButton:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  .sheetButton:active:focus {
-    outline: none;
-    box-shadow: none;
-  }
+    .buttonIcon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .buttonIcon:active:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .buttonIcon.padded {
+        margin: 5px 5px 5px 0px;
+        width: 45px;
+        height: 45px;
+    }
+    .buttonIcon:disabled {
+        opacity: 40%;
+    }
+    .buttonIcon:disabled:hover {
+        background-color: var(--vscode-button-background);
+    }
 
-  .rounded {
-    border-radius: 5px;
-  }
+    .sheetButton {
+        background-color: var(--vscode-tab-inactiveBackground);
+        border: 0px;
+        border-right: 1px solid var(--vscode-tab-border);
+        color: var(--vscode-tab-inactiveForeground);
+        display: inline-block;
+        cursor: pointer;
+        margin: 0px;
+        padding: 8px 8px 8px 8px;
+    }
+
+    .sheetButton:hover {
+        background-color: var(--vscode-tab-unfocusedHoverBackground);
+        color: var(--vscode-tab-unfocusedHoverForeground);
+    }
+    .sheetButton.selected {
+        background-color: var(--vscode-tab-activeBackground);
+        color: var(--vscode-tab-activeForeground);
+    }
+    .sheetButton:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .sheetButton:active:focus {
+        outline: none;
+        box-shadow: none;
+    }
 </style>
+==== BASE ====
