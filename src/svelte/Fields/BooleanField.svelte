@@ -39,7 +39,7 @@
     right: 0;
     bottom: 0;
     background-color: #3a3a3a00;
-    border: #3a3a3a solid 3px;
+    border: var(--vscode-disabledForeground) solid 3px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -51,28 +51,29 @@
     width: 26px;
     left: 1px;
     bottom: 1px;
-    background-color: #7c7c81;
+    background-color: var(--vscode-icon-foreground);
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 
   input:checked + .slider {
-    background-color: var(--vscode-textLink-foreground);
-    border: var(--vscode-textLink-foreground) solid 3px;
+    background-color: var(--vscode-button-background);
+    border: var(--vscode-button-background) solid 3px;
   }
 
-  input:focus + .slider {
-    box-shadow: 0 0 1px var(--vscode-textLink-foreground);
-    border: var(--vscode-textLink-foreground) solid 3px;
-  }
+    input:focus + .slider {
+    background-color: var(--vscode-button-background);
+        border: var(--vscode-button-hoverBackground) solid 3px;
+    }
+
+    input + .slider:hover {
+        border: var(--vscode-button-hoverBackground) solid 3px;
+    }
 
   input:checked + .slider:before {
-    background-color: white;
+    background-color: var(--vscode-button-foreground);
   }
 
-  input:focus + .slider:before {
-    background-color: white;
-  }
 
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
